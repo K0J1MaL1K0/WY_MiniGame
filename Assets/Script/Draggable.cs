@@ -6,7 +6,7 @@ public class Draggable : MonoBehaviour
 {
     public float Magnification = 30;  //触碰反馈的缩放百分比
 
-    bool mouseEnter = false;
+    public bool mouseEnter = false;  //判断鼠标是否触碰到Object
 
     Vector3 mousePos;
     Vector3 offset;  //偏移量,用来绑定鼠标和Object位置

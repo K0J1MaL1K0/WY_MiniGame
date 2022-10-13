@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class testLocation : MonoBehaviour
 {
-    public GameObject objectLocation;
+    public GameObject xin;
+
+    bool xinIsDragging;
 
     // Start is called before the first frame update
     void Start()
@@ -15,9 +17,10 @@ public class testLocation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!Input.GetMouseButton(0))
+        xinIsDragging = xin.GetComponent<Draggable>().mouseEnter && xin.transform.localScale==Vector3.positiveInfinity;
+        if (!xinIsDragging)
         {
-            transform.position = objectLocation.GetComponent<Transform>().position;
+            xin.transform.position = transform.position;
         }
     }
 }
