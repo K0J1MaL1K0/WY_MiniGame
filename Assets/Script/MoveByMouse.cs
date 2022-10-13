@@ -7,7 +7,7 @@ public class MoveByMouse : MonoBehaviour
     public GameObject MoveObject;  //需要移动的GO
     public bool leftOrNot;  //左边的感应区为true,右边为false
     public float speed = 10;
-    public float maxPosX = 10;  //最大的移动范围
+    public float rightMaxPosX = -10;  //最大的移动范围
 
     Vector3 playerInput;
 
@@ -17,7 +17,7 @@ public class MoveByMouse : MonoBehaviour
         if (leftOrNot)  //设置左右区域
         {
             playerInput = new Vector3(-1, 0);
-            maxPosX = -maxPosX;
+            rightMaxPosX = -rightMaxPosX;  //取相反数,得到左边的最大x轴坐标值
         }
         else
         {
@@ -27,11 +27,13 @@ public class MoveByMouse : MonoBehaviour
 
     private void OnMouseOver()
     {
-        if(!Input.GetMouseButton(0) && leftOrNot && MoveObject.transform.position.x > maxPosX)
+        //MoveObject往左移
+        if (!Input.GetMouseButton(0) && leftOrNot && MoveObject.transform.localPosition.x > rightMaxPosX)
         {
             MoveObject.transform.position += playerInput * speed * Time.deltaTime;
         }
-        else if(!Input.GetMouseButton(0) && !leftOrNot && MoveObject.transform.position.x < maxPosX)
+        //MoveObject往右移
+        else if (!Input.GetMouseButton(0) && !leftOrNot && MoveObject.transform.localPosition.x < rightMaxPosX)
         {
             MoveObject.transform.position += playerInput * speed * Time.deltaTime;
         }
