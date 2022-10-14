@@ -43,7 +43,6 @@ public class Draggable : MonoBehaviour
     {
         if (mouseEnter)
         {
-
             mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);  //获取鼠标位置
 
             if (Input.GetMouseButton(0) && offset.magnitude < 10.06)  //控制偏移量的模,从而控制拾取范围
