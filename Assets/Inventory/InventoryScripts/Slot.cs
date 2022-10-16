@@ -11,6 +11,18 @@ public class Slot : MonoBehaviour
     public Image slotImage;
     public Text slotNum;
 
+    public void ItemOnClicked()
+    {
+        InventoryManage.UpdateItemInfo(slotItem.itemInformation);
+        InventoryManage.BigUpdateItemInfo(slotItem.itemInformation);
+    }
 
+
+
+
+
+
+
+    
 
 }

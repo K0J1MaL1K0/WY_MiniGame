@@ -39,6 +39,7 @@ namespace NodeCanvas.Tasks.Actions
             }
 
             agent.gameObject.SetActive(value);
+            //ExecuteAction(Component );
             EndAction();
         }
     }

@@ -12,6 +12,7 @@ public class InventoryManage : MonoBehaviour
     public GameObject slotGrid;
     public Slot slotPrefab;
     public Text itemInformation;
+    public Text bigItemInformation;
 
     private void Awake()
     {
@@ -23,7 +24,19 @@ public class InventoryManage : MonoBehaviour
     private void OnEnable()
     {
         RefreshItem();
+        instance.itemInformation.text = "";
     }
+
+    public static void UpdateItemInfo(string itemDescription)
+    {
+        instance.itemInformation.text = itemDescription;
+    }
+
+    public static void BigUpdateItemInfo(string itemDescription)
+    {
+        instance.bigItemInformation.text = itemDescription;
+    }
+
     //π“‘ÿprefabµΩŒÔ∆∑
     public static void CreateNewItem(Item item)
     {

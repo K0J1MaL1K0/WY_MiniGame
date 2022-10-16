@@ -7,11 +7,21 @@ public class ItemOnWorld : MonoBehaviour
     public Item thisItem;
     public Inventory playerInventory;
 
-    private void OnMouseDown()
+    private void OnMouseOver()
     {
-        AddNewItem();
-        Destroy(gameObject);
+        if (Input.GetMouseButton(1))
+        {
+            AddNewItem();
+            Destroy(gameObject);
+        }
     }
+
+
+
+    //{
+    //   AddNewItem();
+    //   Destroy(gameObject);
+    // }
 
     public void AddNewItem()
     {
@@ -32,14 +42,5 @@ public class ItemOnWorld : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  
 }
