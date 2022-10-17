@@ -12,7 +12,7 @@ public class ItemCheck : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
 
-            if(item.itemList[0].itemHeld == 1)
+            if(item.itemList[0].itemHeld >= 1)
             {
                 dialogue.StartDialogue();
             }
