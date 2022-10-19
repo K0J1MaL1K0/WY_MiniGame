@@ -15,19 +15,19 @@ public class Draggable : MonoBehaviour
     {
         if (!Input.GetMouseButton(0))  //鼠标触碰并且没有点击左键
         {
-            transform.localScale += new Vector3(Magnification / 100, Magnification / 100, 1f);  //触碰反馈
+            transform.localScale = new Vector3(1 + (Magnification / 100), 1 + (Magnification / 100), 1f);  //触碰反馈
             mouseEnter = true;
         }
     }
 
     private void OnMouseDown()
     {
-        transform.localScale -= new Vector3(Magnification / 100, Magnification / 100, 1f);  //拾取反馈
+        transform.localScale = new Vector3(1, 1, 1);  //拾取反馈
     }
 
     private void OnMouseUpAsButton()
     {
-        transform.localScale += new Vector3(Magnification / 100, Magnification / 100, 1f);  //松开拾取反馈
+        transform.localScale = new Vector3(1 + (Magnification / 100), 1 + (Magnification / 100), 1f);  //松开拾取反馈
     }
 
     private void OnMouseExit()
