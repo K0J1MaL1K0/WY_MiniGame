@@ -1,11 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using NodeCanvas.DialogueTrees;
+using NodeCanvas.Framework;
 
 public class ItemOnWorld : MonoBehaviour
 {
     public Item thisItem;
     public Inventory playerInventory;
+    public DialogueTreeController dialogue;
+    public Blackboard BB;
+    public int NewItemNumber;
+
+    private void Update()
+    {
+        NewItemNumber = BB.GetVariableValue<int>("SpecialLetter");
+    }
 
     private void OnMouseOver()
     {
@@ -13,6 +23,7 @@ public class ItemOnWorld : MonoBehaviour
         {
             AddNewItem();
             Destroy(gameObject);
+
         }
     }
 
@@ -34,7 +45,11 @@ public class ItemOnWorld : MonoBehaviour
         }
         else
         {
-            thisItem.itemHeld += 1;
+            //thisItem.itemHeld += 1;
+            NewItemNumber+= 1;
+
+
+
         }
 
         InventoryManage.RefreshItem();
