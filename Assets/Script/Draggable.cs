@@ -8,35 +8,27 @@ public class Draggable : MonoBehaviour
 
     public bool mouseEnter = false;  //判断鼠标是否触碰到Object
 
+    Vector3 originalScale;  //原来的大小
     Vector3 mousePos;
     Vector3 offset;  //偏移量,用来绑定鼠标和Object位置
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        originalScale = transform.localScale;  //获取原来的大小
+    }
 
     void OnMouseEnter()
     {
         if (!Input.GetMouseButton(0))  //鼠标触碰并且没有点击左键
-        {
-            transform.localScale += new Vector3(Magnification / 100, Magnification / 100, 1f);  //触碰反馈
             mouseEnter = true;
-        }
-    }
-
-    private void OnMouseDown()
-    {
-        transform.localScale -= new Vector3(Magnification / 100, Magnification / 100, 1f);  //拾取反馈
-    }
-
-    private void OnMouseUpAsButton()
-    {
-        transform.localScale += new Vector3(Magnification / 100, Magnification / 100, 1f);  //松开拾取反馈
     }
 
     private void OnMouseExit()
     {
-        transform.localScale = new Vector3(1, 1, 1);  //复原所有反馈
+        transform.localScale = originalScale;  //恢复所有反馈
         if (!Input.GetMouseButton(0))  //完全退出
-        {
             mouseEnter = false;
-        }
     }
 
     void Update()
@@ -44,15 +36,15 @@ public class Draggable : MonoBehaviour
         if (mouseEnter)
         {
             mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);  //获取鼠标位置
+            transform.localScale = new Vector3(originalScale.x * (1 + (Magnification / 100)), originalScale.y * (1 + (Magnification / 100)), 1f);  //触碰反馈
 
             if (Input.GetMouseButton(0) && offset.magnitude < 10.06)  //控制偏移量的模,从而控制拾取范围
             {
                 transform.position = mousePos - offset;  //利用偏移量计算出object位置
+                transform.localScale = originalScale;  //拾取反馈
             }
             else
-            {
                 offset = mousePos - transform.position;  //当鼠标触碰object时设定偏移量
-            }
         }
     }
 }
