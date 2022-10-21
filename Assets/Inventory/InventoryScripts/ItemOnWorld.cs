@@ -14,7 +14,7 @@ public class ItemOnWorld : MonoBehaviour
 
     private void Update()
     {
-        NewItemNumber = BB.GetVariableValue<int>("SpecialLetter");
+        //NewItemNumber = BB.GetVariableValue<int>("SpecialLetter");
     }
 
     private void OnMouseOver()

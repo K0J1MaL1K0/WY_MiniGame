@@ -5,6 +5,7 @@ using UnityEngine;
 public class BarSet : MonoBehaviour
 {
     public GameObject xin;  //获取当前物品栏位置里的GO信息的变量
+    public 
 
     // Start is called before the first frame update
     void Start()
@@ -45,4 +46,6 @@ public class BarSet : MonoBehaviour
 
         }
     }
+
+
 }
