@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 178395947}
   - component: {fileID: 178395946}
   - component: {fileID: 178395950}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: xin (3)
   m_TagString: xin
   m_Icon: {fileID: 0}
@@ -434,7 +434,7 @@ GameObject:
   - component: {fileID: 243851360}
   - component: {fileID: 243851359}
   - component: {fileID: 243851363}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: xin (5)
   m_TagString: xin
   m_Icon: {fileID: 0}
@@ -570,13 +570,17 @@ PrefabInstance:
       propertyPath: MoveObject
       value: 
       objectReference: {fileID: 519420028}
+    - target: {fileID: 711711304764781382, guid: fdd5f3bafd473f74db4088ff745ae394, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1504685831368371336, guid: fdd5f3bafd473f74db4088ff745ae394, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1504685831368371336, guid: fdd5f3bafd473f74db4088ff745ae394, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 1504685831368371336, guid: fdd5f3bafd473f74db4088ff745ae394, type: 3}
       propertyPath: m_LocalPosition.y
@@ -618,17 +622,81 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoveBar
       objectReference: {fileID: 0}
+    - target: {fileID: 2305779307776929124, guid: fdd5f3bafd473f74db4088ff745ae394, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2459921307815469243, guid: fdd5f3bafd473f74db4088ff745ae394, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3611781518600421666, guid: fdd5f3bafd473f74db4088ff745ae394, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3631404746120044752, guid: fdd5f3bafd473f74db4088ff745ae394, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3672975187460151540, guid: fdd5f3bafd473f74db4088ff745ae394, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766499387428110153, guid: fdd5f3bafd473f74db4088ff745ae394, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5048475220004748117, guid: fdd5f3bafd473f74db4088ff745ae394, type: 3}
       propertyPath: MoveObject
       value: 
       objectReference: {fileID: 519420028}
+    - target: {fileID: 5573814272010785113, guid: fdd5f3bafd473f74db4088ff745ae394, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5969920503232877077, guid: fdd5f3bafd473f74db4088ff745ae394, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6041417961844149406, guid: fdd5f3bafd473f74db4088ff745ae394, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.715
+      objectReference: {fileID: 0}
+    - target: {fileID: 6177648242304394571, guid: fdd5f3bafd473f74db4088ff745ae394, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.714
+      objectReference: {fileID: 0}
+    - target: {fileID: 6714005065498243543, guid: fdd5f3bafd473f74db4088ff745ae394, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.533
+      objectReference: {fileID: 0}
     - target: {fileID: 6729341771279821852, guid: fdd5f3bafd473f74db4088ff745ae394, type: 3}
       propertyPath: rightMaxPosX
       value: 0.96
       objectReference: {fileID: 0}
+    - target: {fileID: 7209892027928812098, guid: fdd5f3bafd473f74db4088ff745ae394, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279744668397240642, guid: fdd5f3bafd473f74db4088ff745ae394, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345948901651143257, guid: fdd5f3bafd473f74db4088ff745ae394, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7370264650352345255, guid: fdd5f3bafd473f74db4088ff745ae394, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.96
+      value: -0.807
+      objectReference: {fileID: 0}
+    - target: {fileID: 7433683472374296017, guid: fdd5f3bafd473f74db4088ff745ae394, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9125217094599473482, guid: fdd5f3bafd473f74db4088ff745ae394, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1504685831368371343, guid: fdd5f3bafd473f74db4088ff745ae394, type: 3}
@@ -839,7 +907,7 @@ GameObject:
   - component: {fileID: 340880655}
   - component: {fileID: 340880654}
   - component: {fileID: 340880658}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: xin (9)
   m_TagString: xin
   m_Icon: {fileID: 0}
@@ -1335,7 +1403,7 @@ GameObject:
   - component: {fileID: 544652496}
   - component: {fileID: 544652495}
   - component: {fileID: 544652499}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: xin (1)
   m_TagString: xin
   m_Icon: {fileID: 0}
@@ -2283,7 +2351,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808464343}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.42658228, y: -1.5, z: 0}
+  m_LocalPosition: {x: 0.441, y: -1.5, z: 0}
   m_LocalScale: {x: 0.26371613, y: 2.1640642, z: 1}
   m_Children:
   - {fileID: 1786702289}
@@ -2329,7 +2397,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1559428853
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 2877471580529523173, guid: c15ba1dcb835b28498cc6239dc893a2e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3832,7 +3900,7 @@ GameObject:
   - component: {fileID: 1663525544}
   - component: {fileID: 1663525543}
   - component: {fileID: 1663525547}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: xin (2)
   m_TagString: xin
   m_Icon: {fileID: 0}
@@ -4086,7 +4154,7 @@ GameObject:
   - component: {fileID: 1731215806}
   - component: {fileID: 1731215805}
   - component: {fileID: 1731215809}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: xin (6)
   m_TagString: xin
   m_Icon: {fileID: 0}
@@ -4284,7 +4352,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1559428853
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: e470ae79e239ecd478bc7f21bdf30f2a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4537,7 +4605,7 @@ GameObject:
   - component: {fileID: 1856509246}
   - component: {fileID: 1856509245}
   - component: {fileID: 1856509249}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: xin (4)
   m_TagString: xin
   m_Icon: {fileID: 0}
@@ -4867,7 +4935,7 @@ GameObject:
   - component: {fileID: 2027370041}
   - component: {fileID: 2027370040}
   - component: {fileID: 2027370044}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: xin (8)
   m_TagString: xin
   m_Icon: {fileID: 0}
@@ -5005,7 +5073,7 @@ GameObject:
   - component: {fileID: 2044449394}
   - component: {fileID: 2044449393}
   - component: {fileID: 2044449397}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: xin (7)
   m_TagString: xin
   m_Icon: {fileID: 0}
