@@ -14,12 +14,18 @@ public class ChangeTheItemnumber : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "xin")
-        {
-            Debug.Log(BB.GetVariable("SpecialLetter").value);
-            BB.GetVariable("SpecialLetter").value = OperationTools.Operate(BB.GetVariableValue<int>("SpecialLetter"), 1, Operation);
+        
+        
+          if (collision.tag == "xin")
+          {
+              Debug.Log(BB.GetVariable("SpecialLetter").value);
+              BB.GetVariable("SpecialLetter").value = OperationTools.Operate(BB.GetVariableValue<int>("SpecialLetter"), 1, Operation);
             //BB.GetVariableValue<int>("SpecialLetter")=OperationTools.Operate() 
-        }
+            
+          }
+
+        
+        
     }
 
     private void OnTriggerExit2D(Collider2D collision)

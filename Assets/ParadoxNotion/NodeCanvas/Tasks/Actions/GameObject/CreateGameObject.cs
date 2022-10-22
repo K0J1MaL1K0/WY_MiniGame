@@ -13,6 +13,8 @@ namespace NodeCanvas.Tasks.Actions
         public BBParameter<string> objectName;
         public BBParameter<Vector3> position;
         public BBParameter<Vector3> rotation;
+        
+        
 
         [BlackboardOnly]
         public BBParameter<GameObject> saveAs;
@@ -22,6 +24,7 @@ namespace NodeCanvas.Tasks.Actions
             newGO.transform.position = position.value;
             newGO.transform.eulerAngles = rotation.value;
             saveAs.value = newGO;
+            
             EndAction();
         }
     }
