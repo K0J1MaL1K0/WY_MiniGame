@@ -1,0 +1,13 @@
+namespace @命名空间
+{
+&&using UnityEngine;
+
+&&public partial class @类名
+&&{
+&&    #region 参数
+
+&&    @成员
+
+&&    #endregion
+&&}&
+}

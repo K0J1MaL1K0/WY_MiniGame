@@ -6,6 +6,7 @@ TagManager:
   tags:
   - xin
   - special xin
+  - Contain
   layers:
   - Default
   - TransparentFX

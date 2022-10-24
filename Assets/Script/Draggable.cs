@@ -1,12 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using NodeCanvas.Framework;
+using ParadoxNotion;
+using ParadoxNotion.Design;
 
 public class Draggable : MonoBehaviour
 {
     public float Magnification = 30;  //触碰反馈的缩放百分比
-
     public bool mouseEnter = false;  //判断鼠标是否触碰到Object
+    
+    //blackboard组件
+    public OperationMethod Operation = OperationMethod.Add;
+    public OperationMethod Operationre = OperationMethod.Subtract;
+    public Blackboard BB;
+
 
     Vector3 originalScale;  //原来的大小
     Vector3 mousePos;
@@ -23,6 +31,8 @@ public class Draggable : MonoBehaviour
         if (!Input.GetMouseButton(0))  //鼠标触碰并且没有点击左键
             mouseEnter = true;
     }
+
+ 
 
     private void OnMouseExit()
     {
@@ -45,6 +55,16 @@ public class Draggable : MonoBehaviour
             }
             else
                 offset = mousePos - transform.position;  //当鼠标触碰object时设定偏移量
+        }
+    }
+    //识别背包 +1 销毁
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Contain")
+        {
+            BB.GetVariable("SpecialLetter").value = OperationTools.Operate(BB.GetVariableValue<int>("SpecialLetter"), 1, Operation);
+            Destroy(this.gameObject);
+           
         }
     }
 }

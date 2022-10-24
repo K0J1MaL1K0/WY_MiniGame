@@ -1,0 +1,1 @@
+﻿Str_CreateCsPath|Assets/MyProject/Scripts/UI/;Str_CreatePrefabPath|Assets/MyProject/Resources/Prefab/UIPrefab/;Str_ClassSuffix|Param;Str_ClassName|ClassTemplate.txt;Str_ParamName|ParamTemplate.txt;Str_ResetName|ResetTemplate.txt;Str_DefaultInherit|MonoBehaviour;Str_NameSpace|MyProject;IsUseNameSpace|False

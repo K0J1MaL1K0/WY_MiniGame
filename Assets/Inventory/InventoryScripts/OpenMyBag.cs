@@ -5,7 +5,7 @@ using UnityEngine;
 public class OpenMyBag : MonoBehaviour
 {
     public GameObject myBag;
-    bool isOpen;
+    bool isOpen = true;
 
 
 
@@ -25,7 +25,7 @@ public class OpenMyBag : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            isOpen = !isOpen;
+            
             myBag.SetActive(isOpen);
         }
     }

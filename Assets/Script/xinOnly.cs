@@ -39,7 +39,11 @@ public class xinOnly : MonoBehaviour
 
     private void OnMouseExit()
     {
-        Info.SetActive(false);
+        if (xinOnBarSet == true)
+        {
+            Info.SetActive(false);
+        }
+            
     }
 
     
