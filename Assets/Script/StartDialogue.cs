@@ -34,7 +34,6 @@ public class StartDialogue : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
 
-
             dialogue.StartDialogue();
 
         }

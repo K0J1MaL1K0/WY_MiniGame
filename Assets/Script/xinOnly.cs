@@ -10,6 +10,8 @@ public class xinOnly : MonoBehaviour
     public Text text;
     public GameObject Info;
 
+    public float num = 500;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +31,7 @@ public class xinOnly : MonoBehaviour
             
             CheckItemInfo();
             Info.SetActive(true);
-            Info.transform.position = new Vector3(Input.mousePosition.x, Input.mousePosition.y+250, 0);//this.transform.position
+            Info.transform.position = new Vector3(Input.mousePosition.x, Input.mousePosition.y+num, 0);//this.transform.position
             if (Input.GetMouseButton(0))
             {
                 Info.SetActive(false);

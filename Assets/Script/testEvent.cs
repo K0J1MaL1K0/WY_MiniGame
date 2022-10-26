@@ -24,6 +24,6 @@ public class testEvent : MonoBehaviour
         collision.GetComponent<xinOnly>().xinOnBarSet = false;
 
         //Camera.main.GetComponent<CheckFront>().setEventNumber = eventNumer;  //将事件编号加入链表里
-        print(CheckEvent.CheckList(Camera.main.GetComponent<CheckFront>().eventList, 10111));  //检测编号
+        //print(CheckEvent.CheckList(Camera.main.GetComponent<CheckFront>().eventList, 10111));  //检测编号
     }
 }

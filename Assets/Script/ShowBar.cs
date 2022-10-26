@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class ShowBar : MonoBehaviour
 {
-    public float speed = 5;  //显示速度
+    public float speed = 10;  //显示速度
     public float showBarTime = 3;  //显示物品栏的计时
+    public float maxY = -3.14f;  //最大上升的y值
+    public float minY = -5;  //最小下降升的y值
+    public float showBarAreaY = -2.5f;  //感应鼠标的最大范围
 
     float timer;
     float startTimer = 0.5f;  //开始运行时间计时
@@ -23,20 +26,20 @@ public class ShowBar : MonoBehaviour
             startTimer -= Time.deltaTime;
 
         //判断鼠标位置
-        if (Camera.main.ScreenToWorldPoint(Input.mousePosition).y < -2 && startTimer < 0)
+        if (Camera.main.ScreenToWorldPoint(Input.mousePosition).y < showBarAreaY && startTimer < 0)
         {
-            if (transform.position.y < -2.5)
-                transform.position -= new Vector3(0, -2.5f, 0) * speed * Time.deltaTime;
+            if (transform.position.y < maxY)
+                transform.position += new Vector3(0, 1, 0) * speed * Time.deltaTime;  //上升
 
             timer = showBarTime;  //重置计时器
         }
 
         else
         {
-            if (transform.position.y >= -5 && timer < 0)
-                transform.position += new Vector3(0, -2.5f, 0) * speed * Time.deltaTime;
+            if (transform.position.y >= minY && timer < 0)
+                transform.position += new Vector3(0, -1, 0) * speed * Time.deltaTime;  //下降
 
-            if (transform.position.y > -3)
+            if (transform.position.y > minY)
                 timer -= Time.deltaTime;  //计时
         }
     }

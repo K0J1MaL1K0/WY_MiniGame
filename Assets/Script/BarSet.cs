@@ -35,7 +35,7 @@ public class BarSet : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "xin" && !collision.GetComponent<xinOnly>().xinOnBarSet && !Input.GetMouseButton(0))  //放入物品
+        if (xin == null && collision.tag == "special xin" && !collision.GetComponent<xinOnly>().xinOnBarSet && !Input.GetMouseButton(0))  //放入物品
         {
             xin = collision.gameObject;  //获取当前物品栏位置里的GO信息
             xin.GetComponent<xinOnly>().xinOnBarSet = true;  //将xin放入物品栏标志改为true
