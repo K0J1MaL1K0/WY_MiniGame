@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4976226334762406422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4976226334762406419}
+  - component: {fileID: 4976226334762406416}
+  - component: {fileID: 4976226334762406417}
+  m_Layer: 0
+  m_Name: "DialogueTree\u5154"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4976226334762406419
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4976226334762406422}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4976226334762406416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4976226334762406422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c32e4b851ebd8fa4ea0645b99be1cf97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: '{"type":"NodeCanvas.DialogueTrees.DialogueTree","nodes":[{"availableChoices":[{"statement":{"_text":"\u4f60\u597d\u5440\uff0c\u4f60\u5728\u90a3\u6253\u91cf\u6211\u4ec0\u4e48\u5440\uff1f"}},{"statement":{"_text":"\u4f60\u597d\uff1f\u5e72\u561b\u8eb2\u7740\u5440\uff1f"}}],"_position":{"x":402.0,"y":215.0},"$type":"NodeCanvas.DialogueTrees.MultipleChoiceNode","$id":"0"},{"statement":{"_text":"\u54ce\u5440\uff0c\u6211\u5c31\u662f\u597d\u5947\u561b\u3002\u60f3\u770b\u770b\u4f60\u7684\u60c5\u51b5\u3002"},"_position":{"x":242.7326,"y":395.0783},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"1"},{"availableChoices":[{"statement":{"_text":"\u4f60\u597d\u5947\u4ec0\u4e48\u5440\uff1f"}}],"_position":{"x":317.5739,"y":504.0748},"$type":"NodeCanvas.DialogueTrees.MultipleChoiceNode","$id":"2"},{"statement":{"_text":"\u4f60\u77e5\u9053\u5417\uff0c\u4e4b\u524d\u6709\u5f88\u957f\u65f6\u95f4\u6211\u90fd\u627e\u4e0d\u5230\u4f60\u2026\u2026\u4e3a\u4ec0\u4e48\u4f60\u4f1a\u4e0d\u89c1\u4e86\uff1f\u5443\uff0c\u597d\u50cf\u6211\u4e0d\u8be5\u5bf9\u4f60\u8fd9\u4e48\u95ee\u3002"},"_position":{"x":172.0615,"y":648.9385},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"3"},{"availableChoices":[{"statement":{"_text":"\u6211\uff1f\u6211\u600e\u4e48\u4e86\u2026\u2026"}},{"statement":{"_text":"\u4f3c\u4e4e\uff0c\u6211\u662f\u88ab\u63a7\u5236\u7684\uff0c\u88ab\u63a7\u5236\u7740\u79bb\u5f00\u4e86\u2026\u2026\u6211\u4e0d\u61c2\u2026\u2026"}}],"_position":{"x":212.0662,"y":759.6157},"$type":"NodeCanvas.DialogueTrees.MultipleChoiceNode","$id":"4"},{"statement":{"_text":"\u5443\uff0c\u6211\u662f\u5077\u5077\u6765\u770b\u4f60\u7684\uff01\u522b\u62c9\u6211\u51fa\u53bb\uff0c\u6211\u4f1a\u4e56\u4e56\u5730\uff0c\u5b89\u9759\u5730\uff0c\u5728\u8fd9\u91cc\u73a9\u4e00\u4f1a\u513f\u3002"},"_position":{"x":521.1971,"y":391.8431},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"5"},{"availableChoices":[{"statement":{"_text":"\u8bdd\u8bf4\uff0c\u5728\u8fd9\u73a9\uff1f\u73a9\u95f9\u54ea\u8fd8\u80fd\u5b89\u9759\uff1f"}}],"_position":{"x":619.3203,"y":506.4062},"$type":"NodeCanvas.DialogueTrees.MultipleChoiceNode","$id":"6"},{"statement":{"_text":"\u5443\uff0c\u6211\u4f1a\u5b89\u9759\u7684\u3002\u4f60\u6ca1\u53d1\u73b0\u5417\uff0c\u8fd9\u91cc\u662f\u6ca1\u6709\u5435\u95f9\u58f0\u7684\uff0c\u4e5f\u4e0d\u4f1a\u5141\u8bb8\u5435\u95f9\u3002\u56db\u5468\u7684\u4e1c\u897f\u90fd\u50cf\u662f\u5728\u4e16\u4e0a\u7ecf\u5386\r\u4e86\u5f88\u4e45\u5f88\u4e45\u4e86\uff0c\u73b0\u5728\u5df2\u7ecf\u6ca1\u6709\u7cbe\u529b\u95f9\u817e\u4e86\u3002\u800c\u4e14\u9664\u4e86\u5b83\u4eec\u7684\u4e3b\u4eba\u4e4b\u5916\uff0c\u4e5f\u6ca1\u6709\u4ec0\u4e48\u80fd\u8fdb\u6765\u8ba9\u5b83\u4eec\u70ed\u95f9\u8d77\u6765\r\u5427\uff1f\u597d\u5427\uff0c\u9664\u4e86\u6211\uff0c\u6211\u597d\u50cf\u5c31\u662f\u81ea\u5df1\u8dd1\u8fdb\u6765\u7684\u3002\u518d\u8bf4\u4e86\uff0c\u4f60\u603b\u662f\u81ea\u5df1\u5f85\u5728\u8fd9\u91cc\uff0c\u4e0d\u5acc\u5b83\u592a\u5b89\u9759\u4e86\u5417\uff1f"},"_position":{"x":573.6277,"y":651.5016},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"7"},{"availableChoices":[{"statement":{"_text":"\u597d\u5427\uff0c\u8bf4\u5230\u5e95\u8fd8\u662f\u60f3\u73a9\u95f9\u554a\u3002"}}],"_position":{"x":674.597,"y":769.3138},"$type":"NodeCanvas.DialogueTrees.MultipleChoiceNode","$id":"8"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"6"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"6"},"_targetNode":{"$ref":"7"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"7"},"_targetNode":{"$ref":"8"},"$type":"NodeCanvas.DialogueTrees.DTConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}},"derivedData":{"actorParameters":[],"$type":"NodeCanvas.DialogueTrees.DialogueTree+DerivedSerializationData"}}'
+  _boundGraphObjectReferences: []
+  _boundGraphSource:
+    _version: 3.25
+    _category: 
+    _comments: 
+    _translation: {x: -94.82268, y: -251.7726}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 1
+  _disableAction: 2
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 0}
+  _blackboard: {fileID: 4976226334762406417}
+--- !u!114 &4976226334762406417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4976226334762406422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{}}'
+  _objectReferences: []
+  _serializedVariables: []

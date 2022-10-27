@@ -1,13 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using NodeCanvas.Framework;
+using ParadoxNotion;
+using ParadoxNotion.Design;
+using UnityEngine.EventSystems;
+using NodeCanvas.DialogueTrees;
+
 
 
 public class SendLetters : MonoBehaviour
 {
-    public Inventory Inventory;
-    public Item thisItem;
-    public SendLetters SendLetter;
+    
+    
+    
+    public DialogueTreeController dialogue;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,30 +31,13 @@ public class SendLetters : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-           SendLetter.ReduceItem();
+            dialogue.StartDialogue();
 
-         }
+        }
     }
 
 
-    //{
-    //if (Input.GetMouseButton(0))
-    //{
-    //   SendLetter.ReduceItem();
 
-    // }
-    //}
 
-    public void ReduceItem()
-    {
-        if (thisItem.itemHeld >= 2)
-        {
-            thisItem.itemHeld -= 1;
-        }
-        else
-        {
-            Inventory.itemList.Remove(thisItem);
-        }
-        InventoryManage.RefreshItem();
-    }
+   
 }

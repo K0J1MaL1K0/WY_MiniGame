@@ -16,17 +16,17 @@ public class StartDialogue : MonoBehaviour
     }
     private void Update()
     {
-        sendMail();
+        //sendMail();
     }
 
-    private void sendMail()
-    {
-        if(coll.tag == "xin")
-        {
-            //dialogue.StartDialogue();
-            Debug.Log("触发对话！");
-        }
-    }
+    //private void sendMail()
+    //{
+    //    if(coll.tag == "xin")
+    //    {
+    //        //dialogue.StartDialogue();
+    //        Debug.Log("触发对话！");
+    //    }
+    //}
     
     private void OnMouseOver()
     {

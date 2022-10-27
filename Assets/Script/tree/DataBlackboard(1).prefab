@@ -1,0 +1,506 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8707513714011893391
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8707513714011893393}
+  - component: {fileID: 8707513714011893392}
+  m_Layer: 0
+  m_Name: DataBlackboard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8707513714011893393
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8707513714011893391}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8707513714011893392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8707513714011893391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d4487f1cfc7d114e9eb271eace75d83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{"SpecialLetter":{"_value":7,"_name":"SpecialLetter","_id":"203020fa-42f4-47aa-936b-075b53d9cc1d","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Value
+    A":{"_name":"Value A","_id":"719384b2-7561-41cc-bb9f-68f0b8dcff92","$type":"NodeCanvas.Framework.Variable`1[[System.String,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"myDictionary
+    (String, Boolean)":{"_value":{},"_name":"myDictionary (String, Boolean)","_id":"ef3fc8ff-e8be-4d50-a1bf-9c138c842158","$type":"NodeCanvas.Framework.Variable`1[[System.Collections.Generic.Dictionary`2[[System.String,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]],
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"00
+    00 00":{"_name":"00 00 00","_id":"1826e75d-97e2-4bc6-907c-167f285cf8dd","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"00
+    00 01":{"_name":"00 00 01","_id":"fda93b38-7973-47d9-9ec1-97265800e9e8","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"00
+    00 02":{"_name":"00 00 02","_id":"862dcf04-44c9-4cc6-8536-550831435b5e","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"00
+    00 03":{"_name":"00 00 03","_id":"825c3b05-dcde-4260-9bfd-68fbea51c250","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"10
+    32 00":{"_name":"10 32 00","_id":"df06edfa-8191-41a9-aad3-1214a615555c","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"11
+    35 00":{"_name":"11 35 00","_id":"356b414d-4bec-42cf-af31-436c3192de92","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"30
+    00 00":{"_name":"30 00 00","_id":"5e708a50-bed6-4585-bae4-8ed0002aaf42","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"30
+    01 02":{"_name":"30 01 02","_id":"44cf6eb5-3894-48f1-8518-3830ae549efc","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"30
+    40 00":{"_name":"30 40 00","_id":"8a72f9a9-1727-4904-a18d-0c8171604838","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"10
+    10 00":{"_name":"10 10 00","_id":"8f495879-0f2b-4cb2-bc0b-4de3352d4b74","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"10
+    30 00":{"_name":"10 30 00","_id":"70e48c89-e094-498b-ae97-8ad4da0d16e3","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"10
+    31 00":{"_name":"10 31 00","_id":"6f6eb833-15bd-47bd-8544-38c95ffcaa91","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"10
+    20 00":{"_name":"10 20 00","_id":"72473a60-4afe-4662-9769-6700bb772551","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"10
+    40 00":{"_name":"10 40 00","_id":"4d42cc6a-8be4-47ae-a04c-b6a0baf7c327","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"10
+    34 00":{"_name":"10 34 00","_id":"abb48a5f-152e-402a-98db-8e269451292f","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"10
+    39 00":{"_name":"10 39 00","_id":"64bd901c-d2fe-4f19-a661-36e8b86bfeed","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"80
+    00 00":{"_name":"80 00 00","_id":"a79877a0-66a4-4d51-9649-9540e88358de","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"80
+    01 00":{"_name":"80 01 00","_id":"868d3522-ee14-4a74-9fba-8b5284a5d7f9","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"10
+    00 00":{"_name":"10 00 00","_id":"930e51c9-78c5-4f23-acf5-2f2472a7b905","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"11
+    10 00":{"_name":"11 10 00","_id":"7e421ad9-23bf-4b5a-9ed4-8213e5a3c41b","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"11
+    31 00":{"_name":"11 31 00","_id":"e1f95f2b-8a6d-494b-b107-a23eefa7fb3e","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"11
+    32 00":{"_name":"11 32 00","_id":"5bca8780-c87e-4209-80a3-82b8866fde2d","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"11
+    33 00":{"_name":"11 33 00","_id":"89268ec9-ea29-4d83-8829-3f30e48448e6","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"11
+    35 03":{"_name":"11 35 03","_id":"42588286-656d-4ee3-b9e3-168d212dfb25","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"11
+    36 00":{"_name":"11 36 00","_id":"d3b4edd2-5fe6-41b8-83d8-422f1354c92e","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"11
+    20 00":{"_name":"11 20 00","_id":"eabffb6c-fa89-40ef-9aa5-9e7f5b5c70d9","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"11
+    37 00":{"_name":"11 37 00","_id":"6c0aec10-0786-48e2-bfa6-b99fe7ef6af7","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"12
+    10 00":{"_name":"12 10 00","_id":"c4b36966-0f19-4101-b45d-d19103cd9bb5","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"12
+    11 00":{"_name":"12 11 00","_id":"02a8211c-6a24-46ef-bfdb-d21385ff7bfe","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"12
+    31 00":{"_name":"12 31 00","_id":"9fe05033-3cbd-4923-aca0-dcc4fa05dfff","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"20
+    10 00":{"_name":"20 10 00","_id":"2edd0bf0-67fa-4a8f-b7e9-61d799fd0e58","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"20
+    31 00":{"_name":"20 31 00","_id":"1c955a9c-a60a-429a-9ac1-063cf88c349f","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"20
+    32 00":{"_name":"20 32 00","_id":"4e1437bc-3d5a-4c4d-94ca-cda0ebbfcdc5","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"22
+    11 00":{"_name":"22 11 00","_id":"0d851c04-d181-4bf9-a2b6-4ea76245fa3e","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"20
+    34 00":{"_name":"20 34 00","_id":"23d85bde-9c01-42b7-a513-920c99a9d450","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"31
+    13 01":{"_name":"31 13 01","_id":"0035922b-a509-41a0-9e0a-f840ee8d29aa","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"41
+    31 00":{"_name":"41 31 00","_id":"c666f5c9-2444-4ae5-9ad2-f26cf5a73034","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"42
+    31 00":{"_name":"42 31 00","_id":"368d18d3-098c-400f-91cd-2dd368e9a312","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"30
+    01 00":{"_name":"30 01 00","_id":"e6518cda-639a-4516-8a31-c1dabfeb281c","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"30
+    01 01":{"_name":"30 01 01","_id":"779ec860-7cf5-4f58-8da4-4b06f0ca9b7a","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"00
+    02 00":{"_name":"00 02 00","_id":"c2ae4e11-f1d1-4a9b-b3f5-e19a2d956e6b","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"31
+    10 00":{"_name":"31 10 00","_id":"1b448ff6-e051-4fab-8fe7-bb845e192835","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"31
+    11 00":{"_name":"31 11 00","_id":"f2ea9e50-6100-42fd-828a-b3618dc7ee42","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"10
+    41 00":{"_name":"10 41 00","_id":"93ae6fc0-195c-460d-bc6f-24d261053266","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"31
+    12 00":{"_name":"31 12 00","_id":"52933416-730a-4d9d-bed5-c2cd5d014df6","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"62
+    36 00":{"_name":"62 36 00","_id":"cf61db01-85cd-4ff5-a3a5-52ca68fda727","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"31
+    13 00":{"_name":"31 13 00","_id":"1d8f2ae0-c8f4-4907-828e-36d71ea94f8f","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"34
+    10 00":{"_name":"34 10 00","_id":"f7377075-7dc5-43c1-b240-a1cebd052a45","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"35
+    10 00":{"_name":"35 10 00","_id":"69bb3815-de44-4fc7-8a42-c780607d47c0","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"31
+    14 00":{"_name":"31 14 00","_id":"5f55d4b3-e89c-4e9b-bfb9-d04e6e540a21","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"51
+    30 00":{"_name":"51 30 00","_id":"10f3b833-9ee5-4d87-916e-9bae22f44475","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"50
+    40 00":{"_name":"50 40 00","_id":"485215f0-19a1-4d65-b90f-7fac098129dd","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"31
+    33 00":{"_name":"31 33 00","_id":"03163222-b7c0-4558-a1e5-b3bf7d2fcbcf","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"33
+    10 00":{"_name":"33 10 00","_id":"1a493b29-4145-4019-9499-8a93fa5ba829","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"31
+    32 00":{"_name":"31 32 00","_id":"79cebb3b-9572-407f-b5ad-2a0865b13711","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"40
+    11 00":{"_name":"40 11 00","_id":"9c4da3cd-c9f6-4446-ab38-8cde4ae68d65","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"41
+    30 00":{"_name":"41 30 00","_id":"99f178f2-8359-44ef-b326-015b837f9d1e","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"42
+    30 00":{"_name":"42 30 00","_id":"ebb2ebcd-adbf-436f-9ce2-f59f89f0c575","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"40
+    31 00":{"_name":"40 31 00","_id":"4d733828-3388-4dd8-a583-6532720e2177","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"41
+    10 00":{"_name":"41 10 00","_id":"656cbdf9-61b6-4797-bcfb-b8313505518c","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"41
+    11 00":{"_name":"41 11 00","_id":"9e24c116-385c-493f-892e-9d0e8e7f2378","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"41
+    12 00":{"_name":"41 12 00","_id":"d44b778a-af96-4950-8367-6d2afb56bebc","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"41
+    13 00":{"_name":"41 13 00","_id":"4cb96743-1975-4586-b70c-501f44617757","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"40
+    32 00":{"_name":"40 32 00","_id":"fd053f05-3ef5-4db0-bd15-f6e524fda8ee","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"42
+    10 00":{"_name":"42 10 00","_id":"84bff481-fbbe-49ca-83a0-db1007b03e8e","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"31
+    33 01":{"_name":"31 33 01","_id":"f0b1f9eb-0822-4ef7-b7c0-76943de5d416","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"40
+    31 01":{"_name":"40 31 01","_id":"70fdd257-1180-47c2-af81-639a8fa1a37a","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"40
+    31 02":{"_name":"40 31 02","_id":"9e213044-3884-4109-830e-5f1c76d17cf7","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"60
+    10 00":{"_name":"60 10 00","_id":"b223ada6-76cd-40af-aacc-7dd8ecc2f80a","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"62
+    30 00":{"_name":"62 30 00","_id":"62f2bfca-4700-49c1-8350-72ebe61c8f7f","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"62
+    30 01":{"_name":"62 30 01","_id":"a67c0050-6a37-468a-9426-1dbd697cc533","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"62
+    30 02":{"_name":"62 30 02","_id":"f39dc1ff-c0f7-4df7-a6f6-f8430c73a6b4","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"31
+    30 00":{"_name":"31 30 00","_id":"e6b29bf9-9a56-4297-8d82-68ef6bfc3e6e","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"62
+    31 00":{"_name":"62 31 00","_id":"e89a3823-2851-46fe-b16e-e836ff64197c","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"62
+    32 00":{"_name":"62 32 00","_id":"b80725b2-5418-4a18-a09e-bb18ca70bea9","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"62
+    33 00":{"_name":"62 33 00","_id":"64c3fa11-7acb-4eb9-ab09-bc11d94c3e57","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"62
+    34 00":{"_name":"62 34 00","_id":"5144c9f2-a3de-4a08-8df1-55bf4268c897","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"62
+    35 00":{"_name":"62 35 00","_id":"e8c94afc-c6db-4bba-94c2-e810328ff402","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"31
+    31 00":{"_name":"31 31 00","_id":"29e61f1f-38f9-4d26-8c66-16162d6045a4","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"63
+    30 00":{"_name":"63 30 00","_id":"d95c1e93-0618-4d9e-a021-378cd45c5ab8","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"10
+    38 00":{"_name":"10 38 00","_id":"b4debd01-c65c-4123-bab0-19a840a84319","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"10
+    36 00":{"_name":"10 36 00","_id":"c6b220e7-052d-4d07-a434-a5e79a571e36","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"20
+    30 00":{"_name":"20 30 00","_id":"ac2ac564-72bd-4806-ac8e-8be9ede17e3c","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"20
+    33 00":{"_name":"20 33 00","_id":"36f82a24-ca7e-48c0-a040-98c85830e271","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"30
+    30 00":{"_name":"30 30 00","_id":"9aba45a8-4a2d-4ac3-ab32-2622bcf8e7b4","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"40
+    12 00":{"_name":"40 12 00","_id":"321fbdc9-b0ef-4340-a4f3-b546008e05b8","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"40
+    30 00":{"_name":"40 30 00","_id":"e2000117-436a-4765-8721-63ee667569bf","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
+  _objectReferences: []
+  _serializedVariables:
+  - _json: '{"_value":7,"_name":"SpecialLetter","_id":"203020fa-42f4-47aa-936b-075b53d9cc1d","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"Value A","_id":"719384b2-7561-41cc-bb9f-68f0b8dcff92","$type":"NodeCanvas.Framework.Variable`1[[System.String,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_value":{},"_name":"myDictionary (String, Boolean)","_id":"ef3fc8ff-e8be-4d50-a1bf-9c138c842158","$type":"NodeCanvas.Framework.Variable`1[[System.Collections.Generic.Dictionary`2[[System.String,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]],
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"00 00 00","_id":"1826e75d-97e2-4bc6-907c-167f285cf8dd","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"00 00 01","_id":"fda93b38-7973-47d9-9ec1-97265800e9e8","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"00 00 02","_id":"862dcf04-44c9-4cc6-8536-550831435b5e","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"00 00 03","_id":"825c3b05-dcde-4260-9bfd-68fbea51c250","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"10 32 00","_id":"df06edfa-8191-41a9-aad3-1214a615555c","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"11 35 00","_id":"356b414d-4bec-42cf-af31-436c3192de92","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"30 00 00","_id":"5e708a50-bed6-4585-bae4-8ed0002aaf42","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"30 01 02","_id":"44cf6eb5-3894-48f1-8518-3830ae549efc","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"30 40 00","_id":"8a72f9a9-1727-4904-a18d-0c8171604838","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"10 10 00","_id":"8f495879-0f2b-4cb2-bc0b-4de3352d4b74","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"10 30 00","_id":"70e48c89-e094-498b-ae97-8ad4da0d16e3","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"10 31 00","_id":"6f6eb833-15bd-47bd-8544-38c95ffcaa91","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"10 20 00","_id":"72473a60-4afe-4662-9769-6700bb772551","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"10 40 00","_id":"4d42cc6a-8be4-47ae-a04c-b6a0baf7c327","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"10 34 00","_id":"abb48a5f-152e-402a-98db-8e269451292f","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"10 39 00","_id":"64bd901c-d2fe-4f19-a661-36e8b86bfeed","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"80 00 00","_id":"a79877a0-66a4-4d51-9649-9540e88358de","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"80 01 00","_id":"868d3522-ee14-4a74-9fba-8b5284a5d7f9","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"10 00 00","_id":"930e51c9-78c5-4f23-acf5-2f2472a7b905","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"11 10 00","_id":"7e421ad9-23bf-4b5a-9ed4-8213e5a3c41b","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"11 31 00","_id":"e1f95f2b-8a6d-494b-b107-a23eefa7fb3e","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"11 32 00","_id":"5bca8780-c87e-4209-80a3-82b8866fde2d","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"11 33 00","_id":"89268ec9-ea29-4d83-8829-3f30e48448e6","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"11 35 03","_id":"42588286-656d-4ee3-b9e3-168d212dfb25","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"11 36 00","_id":"d3b4edd2-5fe6-41b8-83d8-422f1354c92e","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"11 20 00","_id":"eabffb6c-fa89-40ef-9aa5-9e7f5b5c70d9","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"11 37 00","_id":"6c0aec10-0786-48e2-bfa6-b99fe7ef6af7","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"12 10 00","_id":"c4b36966-0f19-4101-b45d-d19103cd9bb5","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"12 11 00","_id":"02a8211c-6a24-46ef-bfdb-d21385ff7bfe","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"12 31 00","_id":"9fe05033-3cbd-4923-aca0-dcc4fa05dfff","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"20 10 00","_id":"2edd0bf0-67fa-4a8f-b7e9-61d799fd0e58","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"20 31 00","_id":"1c955a9c-a60a-429a-9ac1-063cf88c349f","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"20 32 00","_id":"4e1437bc-3d5a-4c4d-94ca-cda0ebbfcdc5","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"22 11 00","_id":"0d851c04-d181-4bf9-a2b6-4ea76245fa3e","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"20 34 00","_id":"23d85bde-9c01-42b7-a513-920c99a9d450","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"31 13 01","_id":"0035922b-a509-41a0-9e0a-f840ee8d29aa","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"41 31 00","_id":"c666f5c9-2444-4ae5-9ad2-f26cf5a73034","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"42 31 00","_id":"368d18d3-098c-400f-91cd-2dd368e9a312","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"30 01 00","_id":"e6518cda-639a-4516-8a31-c1dabfeb281c","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"30 01 01","_id":"779ec860-7cf5-4f58-8da4-4b06f0ca9b7a","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"00 02 00","_id":"c2ae4e11-f1d1-4a9b-b3f5-e19a2d956e6b","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"31 10 00","_id":"1b448ff6-e051-4fab-8fe7-bb845e192835","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"31 11 00","_id":"f2ea9e50-6100-42fd-828a-b3618dc7ee42","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"10 41 00","_id":"93ae6fc0-195c-460d-bc6f-24d261053266","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"31 12 00","_id":"52933416-730a-4d9d-bed5-c2cd5d014df6","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"62 36 00","_id":"cf61db01-85cd-4ff5-a3a5-52ca68fda727","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"31 13 00","_id":"1d8f2ae0-c8f4-4907-828e-36d71ea94f8f","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"34 10 00","_id":"f7377075-7dc5-43c1-b240-a1cebd052a45","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"35 10 00","_id":"69bb3815-de44-4fc7-8a42-c780607d47c0","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"31 14 00","_id":"5f55d4b3-e89c-4e9b-bfb9-d04e6e540a21","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"51 30 00","_id":"10f3b833-9ee5-4d87-916e-9bae22f44475","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"50 40 00","_id":"485215f0-19a1-4d65-b90f-7fac098129dd","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"31 33 00","_id":"03163222-b7c0-4558-a1e5-b3bf7d2fcbcf","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"33 10 00","_id":"1a493b29-4145-4019-9499-8a93fa5ba829","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"31 32 00","_id":"79cebb3b-9572-407f-b5ad-2a0865b13711","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"40 11 00","_id":"9c4da3cd-c9f6-4446-ab38-8cde4ae68d65","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"41 30 00","_id":"99f178f2-8359-44ef-b326-015b837f9d1e","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"42 30 00","_id":"ebb2ebcd-adbf-436f-9ce2-f59f89f0c575","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"40 31 00","_id":"4d733828-3388-4dd8-a583-6532720e2177","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"41 10 00","_id":"656cbdf9-61b6-4797-bcfb-b8313505518c","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"41 11 00","_id":"9e24c116-385c-493f-892e-9d0e8e7f2378","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"41 12 00","_id":"d44b778a-af96-4950-8367-6d2afb56bebc","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"41 13 00","_id":"4cb96743-1975-4586-b70c-501f44617757","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"40 32 00","_id":"fd053f05-3ef5-4db0-bd15-f6e524fda8ee","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"42 10 00","_id":"84bff481-fbbe-49ca-83a0-db1007b03e8e","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"31 33 01","_id":"f0b1f9eb-0822-4ef7-b7c0-76943de5d416","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"40 31 01","_id":"70fdd257-1180-47c2-af81-639a8fa1a37a","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"40 31 02","_id":"9e213044-3884-4109-830e-5f1c76d17cf7","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"60 10 00","_id":"b223ada6-76cd-40af-aacc-7dd8ecc2f80a","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"62 30 00","_id":"62f2bfca-4700-49c1-8350-72ebe61c8f7f","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"62 30 01","_id":"a67c0050-6a37-468a-9426-1dbd697cc533","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"62 30 02","_id":"f39dc1ff-c0f7-4df7-a6f6-f8430c73a6b4","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"31 30 00","_id":"e6b29bf9-9a56-4297-8d82-68ef6bfc3e6e","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"62 31 00","_id":"e89a3823-2851-46fe-b16e-e836ff64197c","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"62 32 00","_id":"b80725b2-5418-4a18-a09e-bb18ca70bea9","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"62 33 00","_id":"64c3fa11-7acb-4eb9-ab09-bc11d94c3e57","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"62 34 00","_id":"5144c9f2-a3de-4a08-8df1-55bf4268c897","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"62 35 00","_id":"e8c94afc-c6db-4bba-94c2-e810328ff402","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"31 31 00","_id":"29e61f1f-38f9-4d26-8c66-16162d6045a4","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"63 30 00","_id":"d95c1e93-0618-4d9e-a021-378cd45c5ab8","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"10 38 00","_id":"b4debd01-c65c-4123-bab0-19a840a84319","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"10 36 00","_id":"c6b220e7-052d-4d07-a434-a5e79a571e36","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"20 30 00","_id":"ac2ac564-72bd-4806-ac8e-8be9ede17e3c","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"20 33 00","_id":"36f82a24-ca7e-48c0-a040-98c85830e271","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"30 30 00","_id":"9aba45a8-4a2d-4ac3-ab32-2622bcf8e7b4","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"40 12 00","_id":"321fbdc9-b0ef-4340-a4f3-b546008e05b8","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"40 30 00","_id":"e2000117-436a-4765-8721-63ee667569bf","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  _UID: d7f74e5f-f6cc-4b37-a63b-285d65f4207b
+  _identifier: Global
+  _singletonMode: 0
+  _dontDestroyOnLoad: 0

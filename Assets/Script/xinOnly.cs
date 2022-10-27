@@ -9,6 +9,7 @@ public class xinOnly : MonoBehaviour
     public bool xinOnBarSet;  //判断xin是否在物品栏里,防止一个xin占多个物品栏
     public Text text;
     public GameObject Info;
+    //public bool closeSpecialXin = false;  //是否关闭碰撞体
 
     public float num = 500;
 
@@ -21,14 +22,13 @@ public class xinOnly : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+
     }
 
     private void OnMouseOver()
     {
         if (xinOnBarSet == true)
         {
-            
             CheckItemInfo();
             Info.SetActive(true);
             Info.transform.position = new Vector3(Input.mousePosition.x, Input.mousePosition.y+num, 0);//this.transform.position
@@ -47,9 +47,6 @@ public class xinOnly : MonoBehaviour
         }
             
     }
-
-    
-     
 
     private void CheckItemInfo()
     {

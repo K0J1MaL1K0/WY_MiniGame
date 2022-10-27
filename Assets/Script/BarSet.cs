@@ -26,9 +26,9 @@ public class BarSet : MonoBehaviour
                 //如果不需要回到原位之后
                 xin = null;  //扔出物品栏位置里的物品
                 //重新添加上碰撞器
-                gameObject.GetComponent<CircleCollider2D>().enabled = true;
-                gameObject.AddComponent<Rigidbody2D>();
-                gameObject.GetComponent<Rigidbody2D>().gravityScale = 0;
+                //gameObject.GetComponent<CircleCollider2D>().enabled = true;
+                //gameObject.AddComponent<Rigidbody2D>();
+                //gameObject.GetComponent<Rigidbody2D>().gravityScale = 0;
             }
         }
     }
@@ -41,8 +41,8 @@ public class BarSet : MonoBehaviour
             xin.GetComponent<xinOnly>().xinOnBarSet = true;  //将xin放入物品栏标志改为true
 
             //将物品栏该位置的碰撞器都关闭或删除,防止拾取物体时出现bug
-            gameObject.GetComponent<CircleCollider2D>().enabled = false;
-            Destroy(gameObject.GetComponent<Rigidbody2D>());
+            //gameObject.GetComponent<CircleCollider2D>().enabled = false;
+            //Destroy(gameObject.GetComponent<Rigidbody2D>());
 
         }
     }

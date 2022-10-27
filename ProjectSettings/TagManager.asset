@@ -7,6 +7,8 @@ TagManager:
   - xin
   - special xin
   - Contain
+  - BarSet
+  - Daishu
   layers:
   - Default
   - TransparentFX
