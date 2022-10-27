@@ -14,48 +14,62 @@ public class AddXin : MonoBehaviour
 
     public GameObject instantiateXin;
 
-    GameObject existXin;
+    public GameObject addXin;
+    public GameObject subXin;
 
-    bool mouseEnter = false;
+    public bool mouseOver;
+    public bool xinOver;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (mouseOver)
+        {
+            if (addXin == null)
+            {
+                addXin = Instantiate(instantiateXin, transform.position, transform.rotation);
+            }
 
+        }
+        else
+        {
+            print("m out");
+            if (xinOver)
+            {
+                print("x in");
+                if (!Input.GetMouseButton(0) && subXin != null && addXin == null)
+                {
+                    Destroy(subXin);
+                    BB.GetVariable("SpecialLetter").value = OperationTools.Operate(BB.GetVariableValue<int>("SpecialLetter"), 1, Operation);
+                }
+            }
+            else
+            {
+                if (!Input.GetMouseButton(0) && addXin != null)
+                {
+                    Destroy(addXin);
+                    BB.GetVariable("SpecialLetter").value = OperationTools.Operate(BB.GetVariableValue<int>("SpecialLetter"), 1, Operation);
+                    addXin = null;
+                }
+            }
+
+        }
     }
 
     private void OnMouseEnter()
     {
-        mouseEnter = true;
-        Instantiate(instantiateXin, transform.position, transform.rotation);
-
-        //BB.GetVariable("SpecialLetter").value = OperationTools.Operate(BB.GetVariableValue<int>("SpecialLetter"), 1, Operationre);
-
-        Destroy(gameObject.GetComponent<Rigidbody2D>(), 1f);//将物品栏该位置的刚体删除,防止拾取物体时出现bug
+        mouseOver = true;
     }
+
     private void OnMouseExit()
     {
-        mouseEnter = false;
-
-
-        //重新添加上刚体
-        gameObject.AddComponent<Rigidbody2D>();
-        gameObject.GetComponent<Rigidbody2D>().gravityScale = 0;
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.tag == "xin" && !Input.GetMouseButton(0))
-        {
-            Destroy(collision.gameObject);
-            //BB.GetVariable("SpecialLetter").value = OperationTools.Operate(BB.GetVariableValue<int>("SpecialLetter"), 1, Operation);
-        }
+        mouseOver = false;
     }
 
     //以下是放碰撞器重叠出bug
@@ -64,6 +78,12 @@ public class AddXin : MonoBehaviour
         if (collision.tag == "BarSet")
             if (collision.gameObject.GetComponent<BarSet>().xin != null)
                 collision.gameObject.GetComponent<BarSet>().xin.GetComponent<BoxCollider2D>().enabled = false;
+
+        if (collision.tag == "xin")
+        {
+            xinOver = true;
+            subXin = collision.gameObject;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -71,5 +91,11 @@ public class AddXin : MonoBehaviour
         if (collision.tag == "BarSet")
             if (collision.gameObject.GetComponent<BarSet>().xin != null)
                 collision.gameObject.GetComponent<BarSet>().xin.GetComponent<BoxCollider2D>().enabled = true;
+
+        if (collision.tag == "xin")
+        {
+            xinOver = false;
+            subXin = null;
+        }
     }
 }
